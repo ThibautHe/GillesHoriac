@@ -10,7 +10,7 @@ const lora = Lora({ subsets: ["latin"], weight: "400" });
 const LoraItalic = Lora({ subsets: ["latin"], weight: "400", style: "italic" });
 const Lorabold = Lora({ subsets: ["latin"], weight: "700" });
 
-export enum Category {
+enum Category {
   All = "all",
   Roman = "Roman",
   Thriller = "Thriller",
