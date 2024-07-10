@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Libre_Franklin, Lora, Poppins } from "next/font/google";
+import {  Lora, } from "next/font/google";
 import "./globals.css";
 import Nav from "./_components/Nav";
 import Footer from "./_components/Footer";
