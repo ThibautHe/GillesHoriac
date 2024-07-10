@@ -1,10 +1,9 @@
-import { Libre_Franklin, Lora } from "next/font/google";
+import { Lora } from "next/font/google";
 import Image from "next/image";
 
 const lora = Lora({ subsets: ["latin"], weight: "400" });
 const LoraItalic = Lora({ subsets: ["latin"], weight: "400", style: "italic" });
 const Lorabold = Lora({ subsets: ["latin"], weight: "700" });
-const libreF = Libre_Franklin({ subsets: ["latin"], weight: "400" });
 
 type BookProps = {
   book: {
@@ -55,7 +54,7 @@ export default function Book({ book, index }: BookProps) {
           <h1 className={`${Lorabold.className} text-4xl`}>{book.title}</h1>
           <h2 className="text-2xl">Gilles Horiac</h2>
           <h3>Catégorie : {book.category}</h3>
-          <p className={`${libreF.className}`}>{book.description}</p>
+          <p className={``}>{book.description}</p>
           <div className="flex justify-between">
             <p className="text-2xl">{book.price}€</p>
             <button

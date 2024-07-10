@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Lora, Libre_Franklin } from "next/font/google";
+import { Lora} from "next/font/google";
 import "./globals.css";
 import Nav from "./_components/Nav";
 import Footer from "./_components/Footer";
@@ -9,10 +9,7 @@ const LoraRegular = Lora({
   weight: ["400"],
   subsets: ["latin"],
 });
-const LibreFranklin = Libre_Franklin({
-  weight: ["400"],
-  subsets: ["latin"],
-});
+
 
 export const metadata: Metadata = {
   title: "Create Next App",

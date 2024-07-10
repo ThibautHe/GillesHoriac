@@ -1,12 +1,6 @@
 import Image from "next/image";
 import AnimIcon from "./AnimIcon";
 import Title from "./Title";
-import { Libre_Franklin } from "next/font/google";
-
-const LibreFranklin = Libre_Franklin({
-  weight: ["400"],
-  subsets: ["latin"],
-});
 
 export default function ClassSection() {
   return (
@@ -33,7 +27,7 @@ export default function ClassSection() {
           ></Image>
 
           <div
-            className={`flex flex-col xl:flex-row gap-12 items-center xl:items-start ${LibreFranklin.className} text-sm`}
+            className={`flex flex-col xl:flex-row gap-12 items-center xl:items-start text-sm`}
           >
             <AnimIcon
               url="/icon1.png"
