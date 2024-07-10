@@ -1,6 +1,12 @@
 import Image from "next/image";
-import { LibreFranklin, LoraRegular } from "../../layout";
 import Title from "./Title";
+import { Libre_Franklin } from "next/font/google";
+
+const LibreFranklin = Libre_Franklin({
+  style: ["italic"],
+  weight: ["400"],
+  subsets: ["latin"],
+});
 
 export default function BooksSection() {
   return (
@@ -12,8 +18,8 @@ export default function BooksSection() {
           <div className="relative w-full md:w-1/4">
             <Image
               src={"/Livres/la_peau_de_lautre.png"}
-              width={500}
-              height={0}
+              width={1080}
+              height={1080}
               style={{ width: "100%" }}
               alt="book La peau de l'autre"
             ></Image>

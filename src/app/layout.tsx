@@ -4,19 +4,7 @@ import "./globals.css";
 import Nav from "./_components/Nav";
 import Footer from "./_components/Footer";
 
-export const LibreFranklin = Libre_Franklin({
-  style: ["normal"],
-  weight: ["400"],
-  subsets: ["latin"],
-});
-
-export const LoraItalic = Lora({
-  style: ["italic"],
-  weight: ["400"],
-  subsets: ["latin"],
-});
-
-export const LoraRegular = Lora({
+const LoraRegular = Lora({
   style: ["italic"],
   weight: ["400"],
   subsets: ["latin"],

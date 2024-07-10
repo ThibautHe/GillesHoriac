@@ -1,7 +1,11 @@
 import Link from "next/link";
-import { LoraItalic } from "../layout";
-import { useScroll } from "framer-motion";
-import { debug } from "console";
+import { Lora } from "next/font/google";
+
+const LoraItalic = Lora({
+  style: ["italic"],
+  weight: ["400"],
+  subsets: ["latin"],
+});
 
 export default function Footer() {
   return (

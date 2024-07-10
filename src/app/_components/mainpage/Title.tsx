@@ -1,4 +1,10 @@
-import { LoraRegular } from "../../layout";
+import { Lora } from "next/font/google";
+
+const LoraRegular = Lora({
+  weight: ["400"],
+  subsets: ["latin"],
+});
+
 type TitleProps = {
   title: string;
 };

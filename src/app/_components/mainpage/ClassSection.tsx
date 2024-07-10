@@ -1,7 +1,12 @@
 import Image from "next/image";
-import { LibreFranklin, LoraRegular } from "../../layout";
 import AnimIcon from "./AnimIcon";
 import Title from "./Title";
+import { Libre_Franklin } from "next/font/google";
+
+const LibreFranklin = Libre_Franklin({
+  weight: ["400"],
+  subsets: ["latin"],
+});
 
 export default function ClassSection() {
   return (
