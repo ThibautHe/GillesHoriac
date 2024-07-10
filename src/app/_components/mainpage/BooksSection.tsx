@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Title from "./Title";
+import { Libre_Franklin } from "next/font/google";
 
-
+const libre = Libre_Franklin({ subsets: ["latin"], weight: "400" });
 
 export default function BooksSection() {
   return (
@@ -20,7 +21,7 @@ export default function BooksSection() {
             ></Image>
             <div className="bg-slate-500 w-[40rem] h-[40rem] absolute -top-9 -left-56 -z-10 rounded-[100%] bg-img"></div>
           </div>
-          <p className={`relative md:w-1/2 `}>
+          <p className={`relative md:w-1/2 ${libre.className}`}>
             Un oncle inconnu lègue à Nicolas Lurquin, un père de famille à la
             vie simple, une somme proche des 10 millions d&apos;euros. Une
             aventure étrange débute alors, autour d&apos;une usurpation

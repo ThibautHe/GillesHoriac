@@ -6,12 +6,12 @@ export default function MainImage() {
       <Image
         id="Accueil"
         className="relative object-cover object-top"
-        src="/convention.png"
+        src="/Convention.png"
         width={0}
         height={0}
         sizes="100vw"
         style={{ width: "100%", height: "auto" }} // optional
-        alt="images of author"
+        alt="image of author"
       ></Image>
     </>
   );
