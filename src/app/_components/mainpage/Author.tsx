@@ -1,6 +1,11 @@
 import Image from "next/image";
 import Title from "./Title";
-import { LibreFranklin } from "../../layout";
+import { Libre_Franklin } from "next/font/google";
+
+const LibreFranklin = Libre_Franklin({
+  weight: ["400"],
+  subsets: ["latin"],
+});
 
 export default function Author() {
   return (
