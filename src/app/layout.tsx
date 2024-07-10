@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
-import {  Lora, } from "next/font/google";
+import { Lora, Libre_Franklin } from "next/font/google";
 import "./globals.css";
 import Nav from "./_components/Nav";
 import Footer from "./_components/Footer";
 
 const LoraRegular = Lora({
   style: ["italic"],
+  weight: ["400"],
+  subsets: ["latin"],
+});
+const LibreFranklin = Libre_Franklin({
   weight: ["400"],
   subsets: ["latin"],
 });
