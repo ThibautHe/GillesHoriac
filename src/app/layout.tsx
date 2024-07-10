@@ -1,8 +1,26 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Libre_Franklin, Lora, Poppins } from "next/font/google";
 import "./globals.css";
+import Nav from "./_components/Nav";
+import Footer from "./_components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+export const LibreFranklin = Libre_Franklin({
+  style: ["normal"],
+  weight: ["400"],
+  subsets: ["latin"],
+});
+
+export const LoraItalic = Lora({
+  style: ["italic"],
+  weight: ["400"],
+  subsets: ["latin"],
+});
+
+export const LoraRegular = Lora({
+  style: ["italic"],
+  weight: ["400"],
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +34,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${LoraRegular.className} font-black`}>
+        <Nav></Nav>
+        {children}
+        <Footer></Footer>
+      </body>
     </html>
   );
 }
