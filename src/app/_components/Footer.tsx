@@ -21,9 +21,9 @@ export default function Footer() {
           <a href="tel:0479779105">0479779105</a>
         </div>
         <div className="hidden md:flex flex-col gap-14 text-3xl justify-center">
-          <a href="#Accueil">Accueil</a>
+          <a href="/#Accueil">Accueil</a>
           <Link href="/livres">Livres</Link>
-          <a href="#Animation">Animations</a>
+          <a href="/#Animation">Animations</a>
         </div>
       </div>
     </div>
