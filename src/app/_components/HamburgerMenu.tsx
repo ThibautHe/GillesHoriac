@@ -71,7 +71,7 @@ export default function HamburgerMenu() {
             <li className="p-8 overflow-hidden test">
               <Link
                 onClick={() => setActive(false)}
-                href={"/Accueil"}
+                href={"/#Accueil"}
                 className="font-bold text-5xl"
               >
                 Accueil
@@ -80,7 +80,7 @@ export default function HamburgerMenu() {
             <li className="p-8 overflow-hidden test">
               <Link
                 onClick={() => setActive(false)}
-                href={"/#Livres"}
+                href={"/livres"}
                 className="font-bold text-5xl"
               >
                 Livres

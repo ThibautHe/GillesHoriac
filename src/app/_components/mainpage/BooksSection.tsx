@@ -11,7 +11,7 @@ export default function BooksSection() {
         <Title title="Ses Ouvrages"></Title>
 
         <div className="mt-9 lg:mt-32 mb-24 flex flex-col items-center text-justify lg:flex-row lg:items-start lg:text-start justify-center gap-16">
-          <div className="relative w-full md:w-1/4">
+          <div className="relative w-full md:w-1/3 lg:w-1/4">
             <Image
               src={"/Livres/la_peau_de_lautre.png"}
               width={1080}

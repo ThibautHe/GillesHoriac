@@ -5,6 +5,7 @@ import BooksCarousel from "./_components/mainpage/BooksCarousel";
 import ClassSection from "./_components/mainpage/ClassSection";
 import Author from "./_components/mainpage/Author";
 import Nav from "./_components/Nav";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -20,7 +21,7 @@ export default function Home() {
         <div className="hidden xl:block w-[50px] h-[50px] absolute -bottom-[30%] left-[39.5%] rounded-full bg-custom-black" />
       </div>
       <h1 className="text-black text-center mt-8 xl:mt-24 text-2xl underline cursor-pointer">
-        Voir tout
+        <Link href={"/livres"}>Voir tous</Link>
       </h1>
 
       <ClassSection></ClassSection>

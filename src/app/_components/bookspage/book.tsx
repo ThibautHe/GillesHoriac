@@ -23,20 +23,20 @@ export default function Book({ book, index }: BookProps) {
         index % 2 ? "bg-custom-black text-light py-24" : ""
       } `}
     >
-      <div className="flex justify-center gap-24">
+      <div className="flex flex-col xl:flex-row justify-center items-center md:p-4 lg:gap-24 xl:items-start">
         <div className="w-fit h-fit relative">
           <Image
-            className="w-[400px]"
+            className="w-[300px] md:w-[400px]"
             src={book.pic}
             width={500}
             height={500}
             alt="book la teigne"
           ></Image>
-          <div className="absolute -bottom-24 w-full h-12 z-50">
+          <div className="hidden md:block absolute -bottom-24 w-full h-12 z-50">
             <span
               className={`${
                 index % 2 ? "bg-custom-light" : "bg-custom-black"
-              } w-full h-px block`}
+              } w-full h-px`}
             ></span>
             <span
               className={`${
@@ -50,7 +50,7 @@ export default function Book({ book, index }: BookProps) {
             ></span>
           </div>
         </div>
-        <div className="w-1/3 flex flex-col justify-between gap-8">
+        <div className="p-4 xl:w-1/3 flex flex-col justify-between gap-8">
           <h1 className={`${Lorabold.className} text-4xl`}>{book.title}</h1>
           <h2 className="text-2xl">Gilles Horiac</h2>
           <h3>Catégorie : {book.category}</h3>
