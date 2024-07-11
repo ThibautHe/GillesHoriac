@@ -4,11 +4,11 @@ import Title from "./Title";
 
 export default function ClassSection() {
   return (
-    <div className="p-4 mt-10 md:p-10 lg:p-24" id="Animations">
+    <div className="p-4 mt-10 md:p-24" id="Animations">
       <Title title="Un auteur dans votre classe ?"></Title>
 
-      <div className="w-full lg:w-3/4 m-auto mt-10 xl:mt-24">
-        <div className=" flex flex-col items-center md:grid gap-16 md:grid-cols-2 w-full h-full ">
+      <div className="w-full m-auto mt-10 xl:mt-24">
+        <div className=" flex flex-col items-start md:grid gap-8 md:grid-cols-2 w-full h-full ">
           <Image
             className="hidden xl:block"
             src="/ecole2.png"
@@ -17,17 +17,20 @@ export default function ClassSection() {
             style={{ width: "100%" }}
             alt="photo a l'ecole"
           ></Image>
+
+
           <Image
-            className="row-span-2"
+            className="row-span-2 w-3/4"
             src="/ecole1.png"
             width={1000}
             height={1000}
-            style={{ width: "90%" }}
+            style={{ width: "100%" }}
             alt="photo a l'ecole"
-          ></Image>
+            ></Image>
+
 
           <div
-            className={`flex flex-col xl:flex-row gap-12 items-center xl:items-start text-sm`}
+            className={`flex relative flex-col xl:flex-row gap-12 w-full items-center xl:items-stretch text-sm h-full`}
           >
             <AnimIcon
               url="/icon1.png"
