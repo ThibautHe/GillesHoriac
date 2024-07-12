@@ -20,7 +20,7 @@ export default function Home() {
         <div className="hidden xl:block w-[100px] h-[100px] absolute -bottom-[30%] left-[33.5%] rounded-full bg-custom-black" />
         <div className="hidden xl:block w-[50px] h-[50px] absolute -bottom-[30%] left-[39.5%] rounded-full bg-custom-black" />
       </div>
-        <Link className="text-black flex justify-center items-center mt-8 xl:mt-24 text-2xl underline" href={"/livres"}>Voir tous</Link>
+        <Link className="text-black flex justify-center items-center mt-8 xl:mt-24 text-2xl underline" href={"/livres"}>Voir tout</Link>
 
 
       <ClassSection></ClassSection>

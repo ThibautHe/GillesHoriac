@@ -13,13 +13,13 @@ const Lorabold = Lora({ subsets: ["latin"], weight: "700" });
 enum Category {
   ALL = "all",
   ROMAN = "Roman",
-  THRILLER = "Thriller",
+  THRILLER = "Thriller / polar",
   JEUNESSE = "Jeunesse",
 }
 
 const books = [
   {
-    title: "la Teigne",
+    title: "La Teigne",
     category: Category.ROMAN,
     pic: "/Livres/la_teigne.jpeg",
     description:
@@ -73,13 +73,13 @@ export default function BookPage() {
           <h1 className={`${LoraItalic.className} text-4xl `}>Mes Romans</h1>
           <ul className="flex my-4 md:gap-8 justify-center items-center">
             <LiCard
-              title="tous"
+              title="Tous"
               SelectedCategory={category}
               category={Category.ALL}
               callback={setCategory}
             ></LiCard>
             <LiCard
-              title="Thriller / Pollar"
+              title="Thriller / Polar"
               SelectedCategory={category}
               category={Category.THRILLER}
               callback={setCategory}

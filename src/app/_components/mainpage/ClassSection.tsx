@@ -7,8 +7,8 @@ export default function ClassSection() {
     <div className="p-4 mt-10 md:p-24" id="Animations">
       <Title title="Un auteur dans votre classe ?"></Title>
 
-      <div className="w-full m-auto mt-10 xl:mt-24">
-        <div className=" flex flex-col items-start md:grid gap-8 md:grid-cols-2 w-[80%] h-[80%] justify-center m-auto ">
+      <div className="w-full m-auto mt-24 xl:mt-24">
+        <div className=" flex flex-col items-start md:grid gap-8 md:grid-cols-2 lg:w-[80%] lg:h-[80%] justify-center m-auto ">
           <Image
             className="hidden xl:block"
             src="/ecole2.png"
