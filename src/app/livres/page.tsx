@@ -69,8 +69,8 @@ export default function BookPage() {
   return (
     <div>
       <nav className="m-4">
-        <div className="flex flex-col  justify-evenly">
-          <h1 className={`${LoraItalic.className} text-4xl`}>Mes Romans</h1>
+        <div className="flex flex-col w-[90%] m-auto justify-evenly">
+          <h1 className={`${LoraItalic.className} text-4xl `}>Mes Romans</h1>
           <ul className="flex my-4 md:gap-8 justify-center items-center">
             <LiCard
               title="tous"
@@ -79,7 +79,7 @@ export default function BookPage() {
               callback={setCategory}
             ></LiCard>
             <LiCard
-              title="Thriller"
+              title="Thriller / Pollar"
               SelectedCategory={category}
               category={Category.THRILLER}
               callback={setCategory}

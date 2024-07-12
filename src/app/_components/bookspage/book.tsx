@@ -32,11 +32,11 @@ export default function Book({ book, index }: BookProps) {
             height={500}
             alt="book la teigne"
           ></Image>
-          <div className="hidden md:block absolute -bottom-24 w-full h-12 z-50">
+          <div className="hidden md:block absolute w-full mt-4 h-12 z-50">
             <span
               className={`${
                 index % 2 ? "bg-custom-light" : "bg-custom-black"
-              } w-full h-px`}
+              } w-full h-px block`}
             ></span>
             <span
               className={`${

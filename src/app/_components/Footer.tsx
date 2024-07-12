@@ -18,12 +18,12 @@ export default function Footer() {
         <div className="flex flex-col gap-16 items-center justify-center">
           <h1 className={`${LoraItalic.className} text-5xl`}>Gilles Horiac</h1>
           <a href="mailto:herve_jacque@hotmail.com">herve_jacque@hotmail.com</a>
-          <a href="tel:0479779105">0479779105</a>
+          <a href="tel:+32479779105">+32 479 77 91 05</a>
         </div>
         <div className="hidden md:flex flex-col gap-14 text-3xl justify-center">
           <a href="/#Accueil">Accueil</a>
           <Link href="/livres">Livres</Link>
-          <a href="/#Animation">Animations</a>
+          <a href="/#Animations">Animations</a>
         </div>
       </div>
     </div>

@@ -8,7 +8,7 @@ export default function ClassSection() {
       <Title title="Un auteur dans votre classe ?"></Title>
 
       <div className="w-full m-auto mt-10 xl:mt-24">
-        <div className=" flex flex-col items-start md:grid gap-8 md:grid-cols-2 w-full h-full ">
+        <div className=" flex flex-col items-start md:grid gap-8 md:grid-cols-2 w-[80%] h-[80%] justify-center m-auto ">
           <Image
             className="hidden xl:block"
             src="/ecole2.png"

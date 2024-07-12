@@ -8,10 +8,10 @@ export default function Author() {
   return (
     <div className="relative mt-8 pb-8 md:pb-24">
       <div className="absolute top-0 h-full w-full bg-img -z-10 rounded-tr-full" />
-      <div className=" p-4 md:p-24">
+      <div className=" p-24 md:p-24">
         <Title title="L'auteur"></Title>
       </div>
-      <div className="flex flex-col-reverse items-center xl:flex-row justify-center gap-8 px-4">
+      <div className="flex flex-col-reverse items-start xl:flex-row justify-center gap-8 px-4">
         <p className={`xl:w-1/4 w-full text-justify ${libre.className} `}>
           Après avoir enseigné le français pendant 35 ans dans plusieurs écoles
           de Bruxelles, Gilles HORIAC se consacre exclusivement à l’écriture.
