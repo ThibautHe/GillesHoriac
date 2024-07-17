@@ -1,5 +1,6 @@
 import { Lora } from "next/font/google";
 import Image from "next/image";
+import Link from "next/link";
 
 const lora = Lora({ subsets: ["latin"], weight: "400" });
 const LoraItalic = Lora({ subsets: ["latin"], weight: "400", style: "italic" });
@@ -12,6 +13,7 @@ type BookProps = {
     pic: string;
     description: string;
     price: string;
+    url: string;
   };
   index: number;
 };
@@ -19,11 +21,11 @@ type BookProps = {
 export default function Book({ book, index }: BookProps) {
   return (
     <div
-      className={`flex relative items-center min-h-[80vh]  ${
-        index % 2 ? "bg-custom-black text-light py-24" : ""
+      className={`flex relative items-center min-h-[80vh] py-12  ${
+        index % 2 ? "bg-custom-black text-light" : ""
       } `}
     >
-      <div className="flex flex-col xl:flex-row justify-center items-center md:p-4 lg:gap-24 xl:items-start">
+      <div className="flex flex-col xl:flex-row justify-center items-center md:p-4 gap-10 min-h-[75vh]">
         <div className="w-fit h-fit relative">
           <Image
             className="w-[300px] md:w-[400px]"
@@ -32,7 +34,7 @@ export default function Book({ book, index }: BookProps) {
             height={500}
             alt="book la teigne"
           ></Image>
-          <div className="hidden md:block absolute w-full mt-4 h-12 z-50">
+          <div className="hidden absolute w-full mt-4 h-12 z-50">
             <span
               className={`${
                 index % 2 ? "bg-custom-light" : "bg-custom-black"
@@ -56,16 +58,18 @@ export default function Book({ book, index }: BookProps) {
           <h3>Catégorie : {book.category}</h3>
           <p className={``}>{book.description}</p>
           <div className="flex justify-between">
-            <p className="text-2xl">{book.price}€</p>
-            <button
-              className={`px-8 py-4 ${Lorabold.className} ${
-                index % 2
-                  ? "bg-custom-light text-black"
-                  : "bg-custom-black text-light"
-              } rounded-2xl`}
-            >
-              Acheter
-            </button>
+            <p className="text-2xl">Prix : {book.price}€</p>
+            <Link target="_blank" href={book.url}>
+              <button
+                className={`px-8 py-4 ${Lorabold.className} ${
+                  index % 2
+                    ? "bg-custom-light text-black"
+                    : "bg-custom-black text-light"
+                } rounded-2xl`}
+              >
+                Acheter
+              </button>
+            </Link>
           </div>
         </div>
       </div>

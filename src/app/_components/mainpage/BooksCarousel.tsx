@@ -8,17 +8,11 @@ import { motion } from "framer-motion";
 export default function BooksCarousel() {
   const images = [
     "/Livres/col_blanc_casse.jpg",
-    "/Livres/enquete_chez_les_oiseaux.jpg",
     "/Livres/il_ny_a_plus_de_vieillesse.jpg",
-    "/Livres/julien_de_belgique.jpg",
     "/Livres/la_peau_de_lautre.png",
     "/Livres/la_teigne.jpeg",
-    "/Livres/le_vierge_mari.jpg",
-    "/Livres/pleine_lune.jpg",
-    "/Livres/quand_tu_seras_petit.jpg",
     "/Livres/roses_mortelles.jpg",
     "/Livres/sa_majeste_lea.jpg",
-    "/Livres/sales_gosses_je_vous_aime.jpg",
   ];
 
   const FAST_DURATION = 55;
@@ -55,7 +49,7 @@ export default function BooksCarousel() {
     }
 
     return controls?.stop;
-  }, [xTranslation, width, duration, rerender]);
+  }, [xTranslation, width, duration, rerender,mustFinish]);
 
   return (
     <>
