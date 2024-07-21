@@ -4,11 +4,11 @@ import Card from "./Card";
 import { animate, useMotionValue } from "framer-motion";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { books } from "@/app/livres/page";
-import { Category } from "@/app/livres/page";
+import { Books } from "@/app/_constants/Constants";
+
 
 export default function BooksCarousel() {
-  const images = books;
+  const images = Books;
 
   const FAST_DURATION = 55;
   const SLOW_DURATION = 150;
