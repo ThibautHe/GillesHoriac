@@ -5,6 +5,7 @@ import { animate, useMotionValue } from "framer-motion";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { books } from "@/app/livres/page";
+import { Category } from "@/app/livres/page";
 
 export default function BooksCarousel() {
   const images = books;
