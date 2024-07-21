@@ -14,6 +14,7 @@ type BookProps = {
     description: string;
     price: string;
     url: string;
+    id:string
   };
   index: number;
 };
@@ -21,6 +22,7 @@ type BookProps = {
 export default function Book({ book, index }: BookProps) {
   return (
     <div
+    id={book.id}
       className={`flex relative items-center min-h-[80vh] py-12  ${
         index % 2 ? "bg-custom-black text-light" : ""
       } `}

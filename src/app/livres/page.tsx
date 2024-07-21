@@ -17,8 +17,9 @@ enum Category {
   JEUNESSE = "Jeunesse",
 }
 
-const books = [
+export const books = [
   {
+    id:"teigne",
     title: "La Teigne",
     category: Category.ROMAN,
     pic: "/Livres/la_teigne.jpeg",
@@ -28,6 +29,7 @@ const books = [
     url: "https://www.le-lion-zaile.com/fr/accueil/169-la-teigne-9782390660194.html",
   },
   {
+    id:"peau",
     title: "La peau de l'autre",
     category: Category.THRILLER,
     pic: "/Livres/la_peau_de_lautre.png",
@@ -37,6 +39,7 @@ const books = [
     url: "mailto:herve_jacque@hotmail.com",
   },
   {
+    id:"je",
     title: "Je viendrais te chercher",
     category: Category.THRILLER,
     pic: "/Livres/je_viendrais_te_chercher.jpg",
@@ -46,6 +49,7 @@ const books = [
     url: "mailto:herve_jacque@hotmail.com",
   },
   {
+    id:"col",
     title: "Col blanc cassé",
     category: Category.ROMAN,
     pic: "/Livres/col_blanc_casse.jpg",
@@ -55,6 +59,7 @@ const books = [
     url: "mailto:herve_jacque@hotmail.com",
   },
   {
+    id:"lutin",
     title: "Huit lutins",
     category: Category.JEUNESSE,
     pic: "/Livres/huit_lutins.jpeg",
@@ -64,6 +69,7 @@ const books = [
     url: "https://www.publier-un-livre.com/fr/le-livre-en-papier/2593-huit-lutins",
   },
   {
+    id:"vieillesse",
     title: "Il n'y a plus de vieillesse",
     category: Category.ROMAN,
     pic: "/Livres/il_ny_a_plus_de_vieillesse.jpg",
@@ -73,6 +79,7 @@ const books = [
     url: "mailto:herve_jacque@hotmail.com",
   },
   {
+    id:"lea",
     title: "Sa majesté léa ",
     category: Category.JEUNESSE,
     pic: "/Livres/sa_majeste_lea.jpg",
@@ -82,6 +89,7 @@ const books = [
     url: "https://www.publier-un-livre.com/fr/le-livre-en-papier/3099-sa-majeste-lea",
   },
   {
+    id:"foret",
     title: "la forêt des miroirs",
     category: Category.JEUNESSE,
     pic: "/Livres/la_foret_des_miroirs.jpeg",
@@ -91,6 +99,7 @@ const books = [
     url: "https://www.publier-un-livre.com/fr/le-livre-en-papier/3098-la-foret-des-miroirs",
   },
   {
+    id:"Roses",
     title: "Roses mortelles",
     category: Category.JEUNESSE,
     pic: "/Livres/roses_mortelles.jpg",

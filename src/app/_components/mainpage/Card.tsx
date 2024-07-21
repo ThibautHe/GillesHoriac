@@ -2,12 +2,15 @@
 import Image from "next/image";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import Link from "next/link";
+import Book from "../bookspage/book";
 
 type CardProps = {
   url: string;
+  id: string;
 };
 
-export default function Card({ url }: CardProps) {
+export default function Card({ url, id }: CardProps) {
   const [showOverlay, setShowOverlay] = useState(false);
 
   return (
@@ -31,12 +34,18 @@ export default function Card({ url }: CardProps) {
               animate={{ y: 0 }}
               exit={{ y: 10 }}
             >
-              <span>explore now</span>
+              <Link href={`/livres/#${id}`}>Voir plus</Link>
             </motion.h1>
           </motion.div>
         )}
       </AnimatePresence>
-      <Image src={url} alt="url" sizes="300px" fill style={{ objectFit: "cover" }}></Image>
+      <Image
+        src={url}
+        alt="url"
+        sizes="300px"
+        fill
+        style={{ objectFit: "cover" }}
+      ></Image>
     </motion.div>
   );
 }

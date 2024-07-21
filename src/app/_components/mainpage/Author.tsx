@@ -12,7 +12,7 @@ export default function Author() {
         <Title title="L'auteur"></Title>
 
         <div className="flex flex-col-reverse items-start xl:flex-row justify-center gap-8 px-4 mt-24">
-          <p className={`xl:w-1/4 w-full text-justify ${libre.className} `}>
+          <p className={`xl:w-1/2 w-full text-justify ${libre.className} `}>
             Après avoir enseigné le français pendant 35 ans dans plusieurs
             écoles de Bruxelles, Gilles HORIAC se consacre exclusivement à
             l’écriture. C’est en 2008 que sort son premier roman (PLEINE LUNE,

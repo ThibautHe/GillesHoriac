@@ -4,16 +4,10 @@ import Card from "./Card";
 import { animate, useMotionValue } from "framer-motion";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { books } from "@/app/livres/page";
 
 export default function BooksCarousel() {
-  const images = [
-    "/Livres/col_blanc_casse.jpg",
-    "/Livres/il_ny_a_plus_de_vieillesse.jpg",
-    "/Livres/la_peau_de_lautre.png",
-    "/Livres/la_teigne.jpeg",
-    "/Livres/roses_mortelles.jpg",
-    "/Livres/sa_majeste_lea.jpg",
-  ];
+  const images = books;
 
   const FAST_DURATION = 55;
   const SLOW_DURATION = 150;
@@ -49,7 +43,7 @@ export default function BooksCarousel() {
     }
 
     return controls?.stop;
-  }, [xTranslation, width, duration, rerender,mustFinish]);
+  }, [xTranslation, width, duration, rerender, mustFinish]);
 
   return (
     <>
@@ -67,10 +61,8 @@ export default function BooksCarousel() {
         }}
       >
         {[...images, ...images].map((item, index) => (
-          <Card url={item} key={index} />
+          <Card url={item.pic} key={index} id={item.id} />
         ))}
-
-        
       </motion.div>
     </>
   );
