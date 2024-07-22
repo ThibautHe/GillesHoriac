@@ -23,7 +23,7 @@ export const Books = [
     category: Category.THRILLER,
     pic: "/Livres/la_peau_de_lautre.png",
     description:
-      "Nicolas Lurquin mène la vie paisible d’un bon père de famille près de Bruxelles. Un jour, il reçoit l’e-mail d’un notaire de Montpellier l’invitant à l’ouverture du testament de son oncle Guillaume Faviau. Bien que ce nom lui soit parfaitement inconnu, il se rend dans le Languedoc, où le notaire lui apprend qu’il est l’unique héritier d’une somme avoisinant les 10 millions d’euros. Sa surprise est encore plus grande lorsqu’il s’aperçoit que sur sa carte d’identité, son nom a été remplacé par celui de Paul Faviau, un inconnu qui s’avère être un redoutable tueur... Entre le thriller psychologique et le roman noir, La peau de l’autre vous fera douter de votre propre identité...",
+      "Nicolas Lurquin mène la vie paisible d’un bon père de famille près de Bruxelles. Un jour, il reçoit l’e-mail d’un notaire de Montpellier l’invitant à l’ouverture du testament de son oncle Guillaume Faviau. Bien que ce nom lui soit parfaitement inconnu, il se rend dans le Languedoc, où le notaire lui apprend qu’il est l’unique héritier d’une somme avoisinant les 10 millions d’euros. Sa surprise est encore plus grande lorsqu’il s’aperçoit que sur sa carte d’identité, son nom a été remplacé par celui de Paul Faviau. Qui a falsifié ses papiers ? Comment ? Pourquoi ? Nicolas n’y comprend rien, mais sur le chemin du retour, l’euphorie d’être devenu richissime l’emporte sur sa perplexité. L’histoire pourrait être belle, sauf qu’à la porte de son domicile, personne ne le reconnaît. Sa femme et ses deux fils affirment ne l’avoir jamais vu. Pire : un homme, prétendant s’appeler Nicolas Lurquin, a pris sa place. Pour ses collègues et ses amis aussi, il est devenu un parfait étranger. Bien malgré lui, voilà Nicolas dans la peau de Paul Faviau, un inconnu qui s’avère être un redoutable tueur… Entre le thriller psychologique et le roman noir, La peau de l’autre vous fera douter de votre propre identité…",
     price: "15.00",
     url: "mailto:herve_jacque@hotmail.com",
     command: { mail: true },
@@ -74,7 +74,7 @@ export const Books = [
   },
   {
     id: "lea",
-    title: "Sa majesté léa ",
+    title: "Sa Majesté Léa ",
     category: Category.JEUNESSE,
     pic: "/Livres/sa_majeste_lea.jpg",
     description:
@@ -85,7 +85,7 @@ export const Books = [
   },
   {
     id: "foret",
-    title: "la forêt des miroirs",
+    title: "La forêt des miroirs",
     category: Category.JEUNESSE,
     pic: "/Livres/la_foret_des_miroirs.jpeg",
     description:
