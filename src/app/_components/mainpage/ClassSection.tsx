@@ -4,7 +4,7 @@ import Title from "./Title";
 
 export default function ClassSection() {
   return (
-    <div className="p-4 mt-10 md:p-24" id="Animations">
+    <div className="p-4 mt-10 lg:p-24" id="Animations">
       <Title title="Un auteur dans votre classe ?"></Title>
 
       <div className="w-full m-auto mt-24 xl:mt-24">
@@ -20,7 +20,7 @@ export default function ClassSection() {
             ></Image>
           </div>
 
-          <div className="row-start-1 row-end-3 col-start-2 h-full m-auto">
+          <div className="row-start-1 row-end-3 col-start-2 h-full m-auto md:min-w-[350px]">
             <Image
               className=" w-full h-full object-cover"
               src="/ecole1.png"
