@@ -23,6 +23,8 @@ type BookProps = {
 };
 
 export default function Book({ book, index }: BookProps) {
+  const formattedDescription = book.description.replace(/\n/g, "<br>");
+
   return (
     <div
       id={book.id}
@@ -61,7 +63,10 @@ export default function Book({ book, index }: BookProps) {
           <h1 className={`${Lorabold.className} text-4xl`}>{book.title}</h1>
           <h2 className="text-2xl">Gilles Horiac</h2>
           <h3>Catégorie : {book.category}</h3>
-          <p className={``}>{book.description}</p>
+          <p
+            className={``}
+            dangerouslySetInnerHTML={{ __html: formattedDescription }}
+          ></p>
           <div className="flex justify-between">
             <div>
               <p className="text-2xl">Prix : {book.price}€</p>
