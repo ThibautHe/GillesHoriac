@@ -24,10 +24,9 @@ export default function Author() {
             (2014), ROSES MORTELLES (2017), LA PEAU DE L’AUTRE (2019), un polar
             salué par la presse radiophonique et télévisée, et finaliste du
             grand prix littéraire de la SABAM. En 2020 sort LA FORET DES
-            MIROIRS, un roman jeunesse sur la futilité du « paraître ». Tous ces
-            romans sont publiés chez 180°éditions. Depuis 2017, Gilles HORIAC
-            est reconnu par l’AEB (Association des Ecrivains Belges de langue
-            française).
+            MIROIRS, un roman jeunesse sur la futilité du « paraître ». Depuis
+            2017, Gilles HORIAC est reconnu par l’AEB (Association des Ecrivains
+            Belges de langue française).
           </p>
           <div>
             <Image

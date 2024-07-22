@@ -14,7 +14,10 @@ type BookProps = {
     description: string;
     price: string;
     url: string;
-    id:string
+    id: string;
+    command: {
+      mail: boolean;
+    };
   };
   index: number;
 };
@@ -22,7 +25,7 @@ type BookProps = {
 export default function Book({ book, index }: BookProps) {
   return (
     <div
-    id={book.id}
+      id={book.id}
       className={`flex relative items-center min-h-[80vh] py-12  ${
         index % 2 ? "bg-custom-black text-light" : ""
       } `}
@@ -60,7 +63,12 @@ export default function Book({ book, index }: BookProps) {
           <h3>Catégorie : {book.category}</h3>
           <p className={``}>{book.description}</p>
           <div className="flex justify-between">
-            <p className="text-2xl">Prix : {book.price}€</p>
+            <div>
+              <p className="text-2xl">Prix : {book.price}€</p>
+              {book.command.mail && (
+                <p>{`(commande par mail, frais d'envoie : 3€)`}</p>
+              )}
+            </div>
             <Link target="_blank" href={book.url}>
               <button
                 className={`px-8 py-4 ${Lorabold.className} ${

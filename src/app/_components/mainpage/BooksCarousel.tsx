@@ -6,7 +6,6 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Books } from "@/app/_constants/Constants";
 
-
 export default function BooksCarousel() {
   const images = Books;
 

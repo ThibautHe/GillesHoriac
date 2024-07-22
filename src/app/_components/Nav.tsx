@@ -71,7 +71,11 @@ export default function Nav() {
         <HamburgerMenu />
       ) : (
         <nav className="flex justify-between p-12">
-          <h1 className={`${LoraItalic.className} text-6xl`}>Gilles Horiac</h1>
+          <Link href={"/"}>
+            <h1 className={`${LoraItalic.className} text-6xl`}>
+              Gilles Horiac
+            </h1>
+          </Link>
           <ul className="flex gap-5 justify-center items-center">
             <li>
               <Link href="/#Accueil">Accueil</Link>
