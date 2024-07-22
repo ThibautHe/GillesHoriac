@@ -20,7 +20,7 @@ export default function ClassSection() {
             ></Image>
           </div>
 
-          <div className="row-start-1 row-end-3 col-start-2 h-full">
+          <div className="row-start-1 row-end-3 col-start-2 h-full m-auto">
             <Image
               className=" w-full h-full object-cover"
               src="/ecole1.png"
@@ -32,7 +32,7 @@ export default function ClassSection() {
           </div>
 
           <div
-            className={`flex row-start-2 col-start-1 relative flex-col xl:flex-row gap-12 w-full items-center xl:items-stretch text-sm h-full`}
+            className={`flex row-start-2 col-start-1 relative flex-col xl:flex-row gap-12 w-full xl:items-stretch text-sm h-full`}
           >
             <AnimIcon
               url="/icon1.png"

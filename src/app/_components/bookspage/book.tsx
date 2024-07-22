@@ -66,7 +66,7 @@ export default function Book({ book, index }: BookProps) {
             <div>
               <p className="text-2xl">Prix : {book.price}€</p>
               {book.command.mail && (
-                <p>{`(commande par mail, frais d'envoie : 3€)`}</p>
+                <p>{`(commande par mail, frais d'envoi : 3€)`}</p>
               )}
             </div>
             <Link target="_blank" href={book.url}>
