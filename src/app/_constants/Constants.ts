@@ -7,6 +7,17 @@ export enum Category {
 
 export const Books = [
   {
+    id: "ange",
+    title: "L'ange Catharsis",
+    category: Category.ROMAN,
+    pic: "/Livres/Catharsis.jpg",
+    description:
+      "Imaginez une pauvre masure isolée au milieu de nulle part. Y vivent un homme, son épousee et leurs deux adolescents qui, tous, souffrent de leur laideur et de leur apathie. À la maison, leur unique trésor est une toile représentant un ange d'une grande beauté.\n Un jour, les huissiers débarquent pour saisir leurs maigres biens... et le tableau de l'ange. Aussitôt, les quatre malheureux courent vainement derrière la camionnette qui emporte leur bien le plus précieux. Quand ils rentrent chez eux, l'ange représenté sur la toile est là. En chair et en os. \n Un roman surréaliste,étrange où la folie se nourrit de poésie, où l'inattendu imprègne lees rêves.",
+    price: "15",
+    url: "mailto:herve_jacque@hotmail.com",
+    command: { mail: true },
+  },
+  {
     id: "teigne",
     title: "La Teigne",
     category: Category.ROMAN,
