@@ -16,7 +16,7 @@ export default function BooksSection() {
             <Link href={"/livres/#peau"}>
               <Image
                 className="h-full w-full object-contain"
-                src={"/Livres/la_peau_de_lautre.png"}
+                src={"/Livres/tqt.jpeg"}
                 width={1080}
                 height={1080}
                 style={{ width: "100%" }}
@@ -30,7 +30,7 @@ export default function BooksSection() {
               <Link href={"/livres/#vieillesse"}>
                 <Image
                   className="h-full w-full object-cover"
-                  src={"/Livres/il_ny_a_plus_de_vieillesse.jpg"}
+                  src={"/Livres/la_peau_de_lautre.png"}
                   width={1080}
                   height={1080}
                   alt="book La peau de l'autre"

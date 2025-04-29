@@ -3,7 +3,7 @@ import { Lora } from "next/font/google";
 import "./globals.css";
 import Nav from "./_components/Nav";
 import Footer from "./_components/Footer";
-import { Analytics } from "@vercel/analytics/react";
+
 const LoraRegular = Lora({
   style: ["italic"],
   weight: ["400"],
@@ -26,7 +26,6 @@ export default function RootLayout({
         <Nav></Nav>
         {children}
         <Footer></Footer>
-        <Analytics></Analytics>
       </body>
     </html>
   );

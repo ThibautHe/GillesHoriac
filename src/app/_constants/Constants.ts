@@ -7,6 +7,17 @@ export enum Category {
 
 export const Books = [
   {
+    id: "tqt",
+    title: "T'inquiète je gère",
+    category: Category.JEUNESSE,
+    pic: "/Livres/tqt.jpeg",
+    description:
+      "Sebastian et Éline , 14 ans, se rencontrent par hasard en pleine forêt. Tous deux sont en fugue. Lui, pour échapper aux griffes d’un dangereux trafiquant de drogue dont il a perdu « la marchandise ». Elle, pour se cacher de la police après une violente altercation avec un homme qui voulait profiter d’elle et qu’elle a laissé pour mort. Une fugue n’est pas forcément une partie de plaisir. Les ados en fuite découvriront une liberté nouvelle avec ses moments de joie, mais aussi ses dangers. Des rencontres, bonnes ou mauvaises, vont émailler leur aventure et les amener à se poser la question : un jeune fugueur est-il toujours un héros ?",
+    price: "10",
+    url: "https://www.publier-un-livre.com/fr/le-livre-en-papier/4592-t-inquiete-je-gere",
+    command: { mail: false },
+  },
+  {
     id: "ange",
     title: "L'ange Catharsis",
     category: Category.ROMAN,
