@@ -6,6 +6,16 @@ export enum Category {
 }
 
 export const Books = [
+    {
+    id: "mauve",
+    title: "Le Bonnet mauve",
+    category: Category.ROMAN,
+    pic: "/Livres/bonnet_mauve.png",
+    description:"Jenny, influenceuse en quête de gloire, se morfond dans son village de Meaulne-Vitray au cœur de l’Allier.\nLorsque sa fille Fanny, 11 ans, disparaît en plein jour, Jenny alerte des proches afin de constituer un comité qui,  elle en est sûre, sera plus efficace que la police. Fanny a-t-elle fugué? S’est-elle perdue? A-t-elle été en enlevée ? Aidé de ses lieutenant Sophie, Rex et Jérémy, le commissaire Ferréol n’exclut aucune piste. Le comité, lui, en est certain : la fillette a été kidnappée par un pervers.\n \n Malgré l’alerte lancée au niveau national, malgré les appels clamés à la TV et sur les réseaux sociaux, l’enfant reste introuvable. On comprendrait que sa mère s’en trouve dévastée par l’inquiétude et le chagrin. Mais non. Reconnue partout, dans la rue comme dans les médias, Jenny rayonne : elle existe enfin. \n \n Qu’est devenue Fanny ? Et d’oū vient cette ivresse qui pousse une mère à faire passer la célébrité avant l’amour pour sa fille ?",
+    price: "15",
+    url: "mailto:herve_jacque@hotmail.com",
+    command: { mail: true },
+  },
   {
     id: "tqt",
     title: "T'inquiète je gère",

@@ -12,15 +12,15 @@ export default function BooksSection() {
         <Title title="Ses Ouvrages"></Title>
 
         <div className="mt-9 lg:mt-32 mb-12 md:w-2/3 m-auto grid grid-cols-2 items-center text-justify lg:items-start lg:text-start justify-center gap-4 md:gap-16">
-          <div className="relative ">
-            <Link href={"/livres/#peau"}>
+          <div className="relative h-full">
+            <Link href={"/livres/#mauve"}>
               <Image
                 className="h-full w-full object-contain"
-                src={"/Livres/tqt.jpeg"}
+                src={"/Livres/bonnet_mauve.png"}
                 width={1080}
                 height={1080}
                 style={{ width: "100%" }}
-                alt="book La peau de l'autre"
+                alt="book Le Bonnet mauve"
               ></Image>
             </Link>
             <div className="bg-slate-500 w-[40rem] h-[40rem] absolute -top-9 -left-56 -z-10 rounded-[100%] bg-img"></div>
@@ -61,13 +61,13 @@ export default function BooksSection() {
               </Link>
             </div>
             <div className="w-full h-full">
-              <Link href={"/livres/#lea"}>
+              <Link href={"/livres/#tqt"}>
                 <Image
                   className="h-full w-full object-cover"
-                  src={"/Livres/sa_majeste_lea.jpg"}
+                  src={"/Livres/tqt.jpeg"}
                   width={1080}
                   height={1080}
-                  alt="book La peau de l'autre"
+                  alt="book T'inquiète je gère"
                 ></Image>
               </Link>
             </div>
